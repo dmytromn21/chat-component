@@ -1,0 +1,102 @@
+.chat-container {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 26.875rem;
+    height: 58.25rem;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.header-img-container {
+    height: 180px;
+}
+
+.header-title-container {
+    background: url('../../public/chat-header-bg.png');
+    background-repeat: no-repeat;
+    padding: 22px 27px 32px 27px;
+    border: solid 1px #707070;
+    border-top: none;
+    border-bottom: none;
+}
+
+.header-title-1 {
+    object-fit: contain;
+    font-size: 24px;
+    font-weight: bold;
+    color: #34383e;
+}
+
+.header-title-2 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #34383e;
+}
+
+.chat-box-container {
+    position: relative;
+    /* padding: 0px 32px 0px 27px; */
+    border: solid 1px #707070;
+    border-top: none;
+    height: calc(100% - 288px);
+}
+
+.message-input {
+    position: absolute;
+    bottom: 40px;
+    width: 300px;
+    padding: 21px 37px 21px 37px;
+    border-radius: 23px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px #707070;
+    margin: 0px 32px 0px 27px;
+    background-color: white;
+}
+
+.message-input > input {
+    outline: none;
+    border: none;
+    color: #34383e;
+    width: 100%;
+}
+
+.messages-container {
+    padding: 24px 32px 0px 27px;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.message-container {
+    display: flex;
+    width: 100%;
+}
+
+.user-message-container {
+    justify-content: end;
+}
+
+.assistant-message-container {
+    justify-content: start;
+}
+
+.user-message-container > .message {
+    background-image: linear-gradient(153deg, #c3eaf9 15%, #83caf5 101%);
+}
+
+.assistant-message-container > .message {
+    background-color: #f7f7f7;
+}
+
+.message {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    padding: 17px 35px 17px 35px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    border-radius: 15px;
+    width: fit-content;
+    min-width: 144px;
+    max-width: 250px;
+    line-height: 24px;
+    word-wrap: unset;
+    color: #34383e;
+}
