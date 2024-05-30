@@ -31,7 +31,7 @@ const ChatComponent = () => {
         {
           headers: {
             'Content-Type': 'application/json',
-            Authorization: `Bearer ${process.env.OPEN_API_KEY}`,
+            Authorization: `Bearer ${process.env.REACT_APP_OPEN_API_KEY}`,
           },
           timeout: 30000 // Increase timeout to 30 seconds
         });
